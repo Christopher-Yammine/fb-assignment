@@ -122,23 +122,36 @@ a:hover{
 }
 .links-container{
     display: flex;
-    height: 80px;
+    height: fit-content;
     align-content: center;
     justify-content: center;
 }
 .links {
-    border:solid;
-    width: 70%;
+    width: 77%;
     justify-content: flex-start;
     align-content: center;
     list-style: none;
     display: flex;
     font-size: 12px;
     color:rgb(173, 173, 173) ;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.sep {
+    border-bottom: solid;
+    border-width: 2px;
 }
 .links > li {
-    padding: 0 10px;
+    padding: 5px 7px;
     font-family: sans-serif;
+}
+.links a {
+    text-decoration: none;
+    color:rgb(173, 173, 173) ;
+}
+.links a:hover {
+    text-decoration: underline;
+    color:rgb(173, 173, 173) ;
 }
 
 @media (max-width:800px){
