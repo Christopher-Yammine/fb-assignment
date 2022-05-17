@@ -1,0 +1,167 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+    padding: 0;
+    margin: 0;
+}
+.main-container {
+    display:flex;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+}
+
+.fb-div {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 650px;
+}
+.bds {
+    border: solid;
+}
+
+.cardboard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5%;
+    height:fit-content;
+    width: 400px;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 3px #c5c5c5;
+  }
+.left-title {
+    padding-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.left-title p {
+    font-family:sans-serif;
+    font-size: 20pt;
+}
+img {
+    margin-bottom: 20px;
+}
+
+input[type=text]{
+        margin-top: 15px;
+        padding: 20px 30px;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 90%;
+      }
+input[type=password]{
+        padding: 20px 30px;
+        margin-bottom:10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 90%; 
+}
+input[type=text]:focus,input[type=password]:focus {
+    outline: 1px ridge #5863ff
+  }
+button{
+    background-color: #12c238;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 30px 2px;
+    cursor: pointer;
+    width: 57%;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+::placeholder {
+    font-size:12pt;
+}
+input[type=submit] {
+    background-color: #5863ff;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 90%;
+    font-size: 16pt;
+    font-weight: bold;
+    border-radius: 5%;
+  }
+a:visited{
+    color: #678bff;
+}
+a:link {
+    
+    color: #678bff;
+    text-decoration: none;
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+}
+.fb-div>div>p>b>a  {
+    color: black;
+}
+
+.create {
+    padding: 20px;
+    font-family:sans-serif ;
+}
+.links-container{
+    display: flex;
+    height: 80px;
+    align-content: center;
+    justify-content: center;
+}
+.links {
+    border:solid;
+    width: 70%;
+    justify-content: flex-start;
+    align-content: center;
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    color:rgb(173, 173, 173) ;
+}
+.links > li {
+    padding: 0 10px;
+    font-family: sans-serif;
+}
+
+@media (max-width:800px){
+    .main-container{
+        flex-direction: column;
+    }
+    .fb-div {
+        width: 100%;
+        padding-top: 50px ;
+        padding-bottom: 20px;
+        padding-left: 0;
+        height: fit-content;
+    }
+    .left-title > div 
+    {
+        padding: 0;
+       
+    }
+  
+    .left-title{
+        text-align: center;
+        height: fit-content;
+    }
+
+
+}
